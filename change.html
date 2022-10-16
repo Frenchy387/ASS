@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div_change</title>
+
+    <style>
+        .diva{
+            display: block;
+            background: green;
+            width: 100%;
+            height: 50px
+        }
+
+        .divb{
+            display: none;
+            background: yellow;
+            width: 100%;
+            height: 50px
+        }
+
+        button{
+            background: lightblue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class = "buttons">
+        <button id = "btn_diva"> DIV A </button>
+        <button id = "btn_divb"> DIV B </button>
+    </div>    
+
+    <div class = "blocks">
+        <div class = "diva" id = "diva" ></div>
+        <div class = "divb" id = "divb" ></div>
+    </div>
+
+    <script>
+        var btn_diva = document.getElementById("btn_diva");
+        var btn_div = document.getElementById("btn_divb");
+        var diva = document.getElementById("diva");
+        var divb = document.getElementById("divb");
+
+        btn_diva.addEventListener('click', ()=>{
+            diva.style.display = 'block';
+            divb.style.display = 'none';
+        })
+
+        btn_divb.addEventListener('click', ()=>{
+            divb.style.display = 'block';
+            diva.style.display = 'none';
+        })
+
+    </script>
+</body>
+
+</html>
