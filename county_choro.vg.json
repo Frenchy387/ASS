@@ -1,7 +1,6 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "US Car Accidents (2016-2021)",
     "width": "container",
-    "height": 600,
     "projection": {"type": "albersUsa"},
     "layer": [
     {
