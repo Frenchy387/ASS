@@ -83,7 +83,7 @@
     },
     {
       
-      "width": 50,
+      "width": "container",
       "transform": [{"filter": {"param": "stateSelection","empty": false}},
       {"fold":["Amenity","Bump","Crossing","Junction","Give_Way","No_Exit","Railway","Roundabout","Station","Stop","Traffic_Calming","Traffic_Signal"]}
       ],
